@@ -1,6 +1,12 @@
+*{
+    margin: 1px;
+    padding: 2.5px;
+    box-sizing: border-box;
+}
+
 body{
-    background: ghostwhite;
-    color: dimgray;
+    background: black;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
@@ -17,7 +23,7 @@ h1{
 
 .box {
     display: inline-block;
-    border: 1px solid gray;
+    border: 1px solid white;
     width: 100px;
     height: 100px;
     text-align: center;
@@ -57,12 +63,12 @@ span {
     height: 75px;
     width: 125px;
     display: inline-block;
-    background: ghostwhite;
+    background: gray;
     position: relative;
     z-index: 10;
     margin-top: -50%;
     border-radius: 20px;
-    box-shadow: 0 0 75px 2px dimgray;
+    box-shadow: 0 0 75px 2px gray;
     animation: larger 0.5s;
     animation-fill-mode: forwards;
     box-sizing: content-box;
@@ -72,15 +78,16 @@ span {
 }
 
 button{
-    background: dimgray;
+    background: blue;
     border-radius: 2px;
     color: ghostwhite;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 button:focus{
-    background: silver;
+    background: blue;
 }
 
 .activeBox{
